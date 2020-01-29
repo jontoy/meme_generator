@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meme Generator</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="form-container">
+                <h1>Meme-o-matic 3000</h1>
+                <form>
+                    <p>
+                        <label> Image URL:
+                            <input type="text" name="url" placeholder="What is the URL of your image?">
+                        </label>
+                    </p>
+                    <p>
+                        <label> Top Caption:
+                            <input type="text" name="top-caption" placeholder="(Optional) What text should appear on top?">
+                        </label>
+                    </p>
+                    <p>
+                        <label> Bottom Caption:
+                            <input type="text" name="bottom-caption" placeholder="(Optional) What text should appear on bottom?">
+                        </label>
+                    </p>
+                    <p>
+                        <label> Caption Size:
+                            <input type="range" min=1 max=5 value=3>
+                        </label>
+                        <label> Font Style:
+                            <select name="font-style">
+                                <option value="impact">Impact</option>
+                                <option value="arial">Arial</option>
+                                <option value="montserrat">Montserrat</option>
+                                <option value="comic-sans">Comic Sans</option>
+                            </select>
+                        </label>
+                        <label> Font Color:
+                            <input type="color" name="font-color"
+                value="#ffffff">
+                        </label>
+                    </p>
+                    <button id="form-submit">Make a Meme!</button>
+                </form>
+            </div>
+    
+            <div id="content-container">
+ 
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
